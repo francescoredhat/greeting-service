@@ -11,7 +11,8 @@ pipeline{
 
         stage("Check Style"){
             steps{
-                echo "Hello 2 from Jenkins Pipeline!"
+                sh "eslint --init"
+                sh "npm run lint"
             }
         }
 
