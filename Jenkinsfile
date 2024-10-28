@@ -11,8 +11,8 @@ pipeline{
 
         stage("Check Style"){
             steps{
-                sh "eslint --init"
-                sh "npm run lint"
+                 
+                sh "eslint . --ext .js,.jsx,.ts,.tsx"
             }
         }
 
