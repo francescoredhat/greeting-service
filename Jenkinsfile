@@ -12,7 +12,7 @@ pipeline{
         stage("Check Style"){
             steps{
                  
-                sh "eslint . --ext .js,.jsx,.ts,.tsx"
+                sh "npm run lint"
             }
         }
 
